@@ -50,13 +50,13 @@ export { UserProvider, useUserState, useUserDispatch, loginUser, signOut };
 // ###########################################################
 
 function loginUser(dispatch, login, password, history, setIsLoading, setError) {
-  setError(false);
+  //setError(false); בלי השורה הזו אפשר להיכנס מהלוגין
   setIsLoading(true);
 
   if (!!login && !!password) {
     setTimeout(() => {
       localStorage.setItem('id_token', 1)
-      setError(null)
+      //setError(null) בלי השורה הזו אפשר להיכנס מהלוגין
       setIsLoading(false)
       dispatch({ type: 'LOGIN_SUCCESS' })
 

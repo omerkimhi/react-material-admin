@@ -12,7 +12,7 @@ export default makeStyles(theme => ({
     left: 0,
   },
   logotypeContainer: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor:'rgb(0, 114, 105)',
     width: "60%",
     height: "100%",
     display: "flex",
@@ -27,15 +27,15 @@ export default makeStyles(theme => ({
     },
   },
   logotypeImage: {
-    width: 165,
+    width:200,
     marginBottom: theme.spacing(4),
   },
   logotypeText: {
-    color: "white",
+    color: "black",
     fontWeight: 500,
     fontSize: 84,
-    [theme.breakpoints.down("md")]: {
-      fontSize: 48,
+    [theme.breakpoints.down("md")]: {//
+      fontSize: 48,//
     },
   },
   formContainer: {
@@ -52,34 +52,21 @@ export default makeStyles(theme => ({
   form: {
     width: 320,
   },
-  tab: {
-    fontWeight: 400,
-    fontSize: 18,
+  tab: {//
+    fontWeight: 400,//
+    fontSize: 18,//
+  },//
+  greeting: {//
+    fontWeight: 500,//
+    textAlign: "center",//
+    marginTop: theme.spacing(4),//
   },
-  greeting: {
-    fontWeight: 500,
-    textAlign: "center",
-    marginTop: theme.spacing(4),
+  subGreeting: {//
+    fontWeight: 500,//
+    textAlign: "center",//
+    marginTop: theme.spacing(2),//
   },
-  subGreeting: {
-    fontWeight: 500,
-    textAlign: "center",
-    marginTop: theme.spacing(2),
-  },
-  googleButton: {
-    marginTop: theme.spacing(6),
-    boxShadow: theme.customShadows.widget,
-    backgroundColor: "white",
-    width: "100%",
-    textTransform: "none",
-  },
-  googleButtonCreating: {
-    marginTop: 0,
-  },
-  googleIcon: {
-    width: 30,
-    marginRight: theme.spacing(2),
-  },
+  
   creatingButtonContainer: {
     marginTop: theme.spacing(2.5),
     height: 46,
@@ -87,10 +74,7 @@ export default makeStyles(theme => ({
     justifyContent: "center",
     alignItems: "center",
   },
-  createAccountButton: {
-    height: 46,
-    textTransform: "none",
-  },
+  
   formDividerContainer: {
     marginTop: theme.spacing(4),
     marginBottom: theme.spacing(4),
@@ -111,17 +95,17 @@ export default makeStyles(theme => ({
   },
   textFieldUnderline: {
     "&:before": {
-      borderBottomColor: theme.palette.primary.light,
+      borderBottomColor: 'rgb(0, 114, 105)',
     },
     "&:after": {
-      borderBottomColor: theme.palette.primary.main,
+      borderBottomColor: 'rgb(0, 114, 105)',
     },
     "&:hover:before": {
-      borderBottomColor: `${theme.palette.primary.light} !important`,
+      borderBottomColor: `${'rgb(0, 114, 105)'} !important`,
     },
   },
   textField: {
-    borderBottomColor: theme.palette.background.light,
+    borderBottomColor: 'rgb(0, 114, 105)',
   },
   formButtons: {
     width: "100%",
@@ -130,19 +114,9 @@ export default makeStyles(theme => ({
     justifyContent: "space-between",
     alignItems: "center",
   },
-  forgetButton: {
-    textTransform: "none",
-    fontWeight: 400,
-  },
+  
   loginLoader: {
     marginLeft: theme.spacing(4),
   },
-  copyright: {
-    marginTop: theme.spacing(4),
-    whiteSpace: "nowrap",
-    [theme.breakpoints.up("md")]: {
-      position: "absolute",
-      bottom: theme.spacing(2),
-    },
-  },
+ 
 }));
