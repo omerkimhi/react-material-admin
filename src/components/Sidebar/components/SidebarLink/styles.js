@@ -18,14 +18,14 @@ export default makeStyles(theme => ({
   },
   linkIcon: {
     marginRight: theme.spacing(1),
-    color: theme.palette.text.secondary + "99",
+    color: 'rgb(0,114,106)' ,
     transition: theme.transitions.create("color"),
     width: 24,
     display: "flex",
     justifyContent: "center",
   },
   linkIconActive: {
-    color: theme.palette.primary.main,
+    color: 'black',
   },
   linkText: {
     padding: 0,
@@ -35,6 +35,7 @@ export default makeStyles(theme => ({
   },
   linkTextActive: {
     color: theme.palette.text.primary,
+    
   },
   linkTextHidden: {
     opacity: 0,

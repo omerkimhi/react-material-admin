@@ -21,11 +21,7 @@ import useStyles from "./styles";
 import { Typography } from "../Wrappers/Wrappers";
 
 // context
-import {
-  useLayoutState,
-  useLayoutDispatch,
-  
-} from "../../context/LayoutContext";
+
 import { useUserDispatch, signOut } from "../../context/UserContext";
 
 
@@ -33,8 +29,7 @@ export default function Header(props) {
   var classes = useStyles();
 
   // global
-  var layoutState = useLayoutState();
-  var layoutDispatch = useLayoutDispatch();
+ 
   var userDispatch = useUserDispatch();
 
   // local

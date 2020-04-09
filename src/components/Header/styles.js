@@ -3,7 +3,7 @@ import { fade } from "@material-ui/core/styles/colorManipulator";
 
 export default makeStyles(theme => ({
   logotype: {
-    color: "white",
+    color: "black",
     marginLeft: theme.spacing(2.5),
     marginRight: theme.spacing(2.5),
     fontWeight: 500,
@@ -19,11 +19,13 @@ export default makeStyles(theme => ({
     transition: theme.transitions.create(["margin"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
+ 
     }),
   },
   toolbar: {
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
+    backgroundColor: 'rgb(0,114,106)'
   },
   hide: {
     display: "none",
@@ -31,18 +33,7 @@ export default makeStyles(theme => ({
   grow: {
     flexGrow: 1,
   },
-  search: {
-    position: "relative",
-    borderRadius: 25,
-    paddingLeft: theme.spacing(2.5),
-    width: 36,
-    backgroundColor: fade(theme.palette.common.black, 0),
-    transition: theme.transitions.create(["background-color", "width"]),
-    "&:hover": {
-      cursor: "pointer",
-      backgroundColor: fade(theme.palette.common.black, 0.08),
-    },
-  },
+  //מכאן אפשר למחוק
   searchFocused: {
     backgroundColor: fade(theme.palette.common.black, 0.08),
     width: "100%",
@@ -100,6 +91,7 @@ export default makeStyles(theme => ({
   headerMenuButtonCollapse: {
     marginRight: theme.spacing(2),
   },
+  //עד כאן 
   headerIcon: {
     fontSize: 28,
     color: "rgba(255, 255, 255, 0.35)",
@@ -129,6 +121,7 @@ export default makeStyles(theme => ({
       cursor: "pointer",
     },
   },
+  //למחוק
   messageNotification: {
     height: "auto",
     display: "flex",
@@ -156,4 +149,5 @@ export default makeStyles(theme => ({
   sendButtonIcon: {
     marginLeft: theme.spacing(2),
   },
+  //עד כאן
 }));
